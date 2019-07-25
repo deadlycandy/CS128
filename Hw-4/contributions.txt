@@ -1,0 +1,6 @@
+Rahil Bhatnagar -- Outlined entire project. Implemented shards route. Redesigned gossip protocols.
+Tested the assignment (test 2 and 4 failing). Handled all HTTP request. Rewrote middleware to handle proxying cases.
+
+James Ngo -- Assisted in refactoring KVS and Views. Debugging.
+
+Raymond Lee -- Wrote unit tests for backend functions. Prototyped shards route.

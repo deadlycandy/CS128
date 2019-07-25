@@ -1,0 +1,10 @@
+To test the program please use the included test script. test_HW2.py is a derivative of the test script posted on Github. 
+Changes made:
+1. Changed json message/keys to match piazza specifcations.
+   E.G. changing the 'error' key in test_HW2 to 'results'.
+2. Streamlined json message/keys presented in test_HW2 but not defined on piazza post to match piazza post format. 
+3. Added an additional unit test to test if a node is down. (Used code provided on piazza post).
+4. Added print statments to show response data (final version commented out)
+5. Used python 2.7
+
+

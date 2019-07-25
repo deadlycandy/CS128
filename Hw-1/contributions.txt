@@ -1,0 +1,5 @@
+rabhatna: Created docker, routes, & server.js.
+rlee24: Tested Docker & Test Script. Learned more about Node.
+jnngo: Asissted in debugging program.
+
+

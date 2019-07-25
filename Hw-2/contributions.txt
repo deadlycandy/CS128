@@ -1,0 +1,7 @@
+rabhatna - Rahil Bhatnagar: Implemented PUT, GET, and DELETE functions (client/kvs). 
+Instanitated HTTP requests using request API to establish client-server communication. 
+Tested required Docker network configuations. Refactored provided test scripts. General debugging. 
+
+rlee24 - Raymond Lee: Create a new file. Mapping out requests. Put, Get, Delete
+
+jnngo - James Ngo: Outlined basic key-value store and Dockerfile. 

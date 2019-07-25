@@ -1,0 +1,68 @@
+This project passes test 3/5 tests. We encountered timeout issues on test two.
+Which we narrowed down to the ip_port combination causing the timeout. The remove node
+test failed due to a 500. I could not narrow the issue with delete view (worked previously).
+
+Here are a the things I changed a few thing in the hw4_test.py
+
+This originally was checking the len of shard however shard is just a key
+
+def test_c_shard_no_lonely_nodes(self):
+    ipPort = self.view[0]["testScriptAddress"]
+
+    shardView = self.getShardView(ipPort)
+    for shard in shardView:
+        length = len(shardView[shard])
+        self.assertTrue(length > 1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INTERNAL TESTS
+Tests:
+
+Shards-Backend.js
+
+makeShard(shardNum) 	| 	✅
+getShards() 			| 	✅
+getMembers(id)		 	| 	✅
+getShards()				| 	✅
+getShardsID(ip_port) 	| 	✅
+getShardsID(ip_port) 	| 	✅
+getAllIDS(ip_port)	 	| 	✅
+getMembersCount(ip_port)| 	✅
+
+Shard.js
+
+router.get('/shard/my_id') 						|
+router.get('/shard/all_ids')					|
+router.get('/shard/members/:id')				|
+router.get('/shard/count/:id')					|
+router.put('/shard/changeShardNumber/')			|
+
+
+KeyValue-store-backend.js
+
+getWorldClock								|	✅
+getRandomKey								|	✅
+searchNewestLocal							| 	✅
+keyExists									|	✅
+insertValue									|	✅
+insertBootstrap								|
+updatePayload								|
+hashKey										|	✅
+shardKVS									|	✅
+purgeKeysFromShard							|	✅
+Merge										|	✅
+MergeWorldClock								|

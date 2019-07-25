@@ -1,0 +1,12 @@
+The lab is functional and meets deisred specifications during our local testing. 
+
+Local testing was done by creating multiple docker instances on the same computer, each with their own ip_port configuration
+(based on the ip of the machine). To ensure the system worked we used the test conditions given within the test script. 
+
+However we ran into 2 main issues. 
+1. While developing the lab certain networks would not allow us to test on. For example when I (Rahil) would switch from eduroam to my 
+   personal wifi, the docker instances would stop communicating. By the end of the lab this problem occured on the eduroam network as well. 
+
+2. Running the test scripts, resulted in failure of operations we knew to work (as per our local testing findings).
+
+
